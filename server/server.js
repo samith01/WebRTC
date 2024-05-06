@@ -10,7 +10,7 @@ let servers = {
     ]
 }
 
-let ws = new WebSocket('ws://localhost:8080/user1');
+let ws = new WebSocket('wss://nlj8mtrg-1000.asse.devtunnels.ms/user1');
 
 
 let init = async () => {

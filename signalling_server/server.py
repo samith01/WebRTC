@@ -17,7 +17,7 @@ async def handle_message(websocket, path):
     finally:
         connected_clients[path].remove(websocket)
 
-start_server = websockets.serve(handle_message, "localhost", 8080)
+start_server = websockets.serve(handle_message, "0.0.0.0", 1000)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
